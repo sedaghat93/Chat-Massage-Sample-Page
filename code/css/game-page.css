@@ -1,0 +1,394 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+  }
+  
+  html {
+    /*62.5% of 16px = 10px  */
+    font-size: 62.5% !important;
+  }
+  body {
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    /* height: 100vh; */
+    background-image: url(../../image/game-image/bg-4.jpg);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    text-transform:capitalize;
+  }
+  
+  h1 {
+    font-size: 7rem;
+  }
+  
+  h2 {
+    font-size: 4rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+    text-transform:capitalize;
+  }
+  
+  p {
+    margin-top: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  /* img{
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+    object-position: center;
+  } */
+
+  .wrapper{
+    /* width: 100vw;
+    height: 100vh; */
+    margin: 5px;
+  }
+
+  .nav{
+    width: 100%;
+    background-color: #03031b;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .nav__icon{
+      padding: 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  .nav__icon a{
+    background-color: #505050;
+    padding: 2px 7px;
+    color: #ffffff;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  .nav__icon input{
+      border: none;
+      outline: none;
+      height: 40px;
+  }
+  
+  .nav__list{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav__item{
+    padding: 10px;
+    margin: 5px;
+    font-size: 2.5rem;
+  }
+  
+  .nav__item>a{
+    color: #d2d0db;
+    transition: color .3s;
+    text-decoration: none;
+  }
+  
+  .nav__item>a:hover{
+    color: #fff;
+    border-bottom: 1px solid #f57600;
+  }
+
+  /* _______________________________________________ */
+
+
+  .highlight{
+      width: 100%;
+      height: auto;
+      margin:1rem .5rem;
+      /* background-color: #03031b; */
+      /* position: relative; */
+  }
+
+  .highlight h3{
+      color: #fff;
+      font-size: 30px;
+      margin-left: 3rem;
+  }
+
+  .highlight .highlight__list{
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,.3fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    /* position: absolute; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .highlight-img{
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+
+  
+
+   .highlight__list img{
+    width: 100%;
+    height: 350px;
+    /* padding: 15px; */
+  }
+
+ .highlight__list .feature-img{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    background-color: rgba(117, 117, 117, 0.9);
+    filter:opacity(88%);
+  } 
+
+  .highlight__list .feature-img h6{
+    margin: 0;
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  .highlight__list .feature-img .fab{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  .highlight__list .feature-img span{
+    float: right;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .btm-slider{
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+  }
+
+  .btm-slider span{
+    height: 5px;
+    width: 50px;
+    background: white;
+    margin: 0 3px;
+  }
+
+  .btm-slider span:hover{
+    background-color: #f57600;
+  }
+/* _____________________________________________________ */
+
+.Whats-hot{
+  width: 100%;
+  margin:1rem auto;
+  color: white;
+}
+
+  .Whats-hot .whats-hot__list{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    /* grid: repeat(1, 1fr) / auto-flow; */
+    grid-gap: 10px;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.whats-hot-img{
+  width: 100%;
+  position: relative;
+}
+
+.whats-hot__list .whats-hot-img img{
+  width: 100%;
+  height: 300px;
+}
+
+.whats-hot__list .whats-hot-img .feature-img{
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  color: #fff;
+  background-color: rgba(117, 117, 117, 0.9);
+  background: cover;
+  filter:opacity(83%);
+}
+
+.whats-hot__list .whats-hot-img .feature-img h6{
+  margin: 0;
+  padding: 10px;
+}
+
+.whats-hot__list .whats-hot-img .feature-img .fab{
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.whats-hot__list .whats-hot-img .feature-img span{
+  float: right;
+  padding: 10px;
+}
+
+/* _______________________________________________________________________________________________________________ */
+
+ @media screen and (max-width:1024px) {
+
+  .nav{
+    max-width: 100vw;
+    padding: 0 5px;
+  }
+
+  .nav__icon{
+      padding: 5px;
+  }
+
+  .nav__icon input{
+    width: 100px;
+    height: 30px;
+  }
+
+  .nav__icon a{
+    padding: 1px 2px;
+    margin: 1px 3px;
+  }
+
+  .nav__icon a>i{
+    font-size: 20px;
+  }
+
+  .nav__list{
+    margin: 10px;
+  }
+  
+  .nav__item{
+    padding: 5px;
+    font-size: 15px;
+  }
+
+.highlight .highlight__list{
+  grid-template-columns:1fr ;
+  justify-content: space-around;
+  row-gap: 10px;
+}
+
+.highlight .highlight__list .highlight-img{
+  max-width: 600px;
+  align-items: center;
+  margin: auto;
+}
+
+.highlight__list .feature-img{
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  background-color: rgba(117, 117, 117, 0.9);
+  filter:opacity(88%);
+} 
+
+.highlight__list .feature-img h6{
+ font-size: 23px;
+}
+
+.highlight__list .feature-img .fab{
+  font-size: 25px;
+}
+
+.highlight__list .feature-img span{
+  margin-right: 1rem;
+}
+
+.btm-slider{
+  display: none;
+}
+__________________________________________________ */
+
+.Whats-hot{
+width: 100%;
+margin:1rem auto;
+
+}
+
+.Whats-hot .whats-hot__list{
+  display: grid;
+  grid-template-columns:repeat(2,1fr) ;
+  justify-content: space-around;
+  grid-gap: 10px;
+}
+
+.whats-hot-img{
+width: 100%;
+position: relative;
+}
+
+.whats-hot__list .whats-hot-img .feature-img h6{
+padding: 10px;
+}
+
+.whats-hot__list .whats-hot-img .feature-img .fab{
+padding: 10px;
+margin-top: 10px;
+}
+
+.whats-hot__list .whats-hot-img .feature-img span{
+float: right;
+padding: 10px;
+}
+}
+
+/* _________________________________________________________________________ */
+
+@media screen and (max-width:768px){
+  .nav__icon{
+      padding: 3px;
+  }
+
+  .nav__icon input{
+    width: 80px;
+    height: 25px;
+  }
+
+  .nav__icon a{
+    padding: 3px;
+    margin: 3px;
+  }
+
+  .nav__icon a>i{
+    font-size: 15px;
+  }
+
+  .nav__list{
+    margin: 5px;
+  }
+  
+  .nav__item{
+    padding: 5px;
+    font-size: 10px;
+  }
+}
